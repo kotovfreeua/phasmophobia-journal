@@ -1,29 +1,29 @@
 export enum GhostEnum {
-  BANSHEE = "Banshee",
-  DEMON = "Demon",
-  GORYO = "Goryo",
-  HANTU = "Hantu",
-  JINN = "Jinn",
-  MARE = "Mare",
-  MYLING = "Myling",
-  OBAKE = "Obake",
-  ONI = "Oni",
-  ONRYO = "Onryo",
+  SPIRIT = "Spirit",
+  WRAITH = "Wraith",
   PHANTOM = "Phantom",
   POLTERGEIST = "Poltergeist",
-  RAIJU = "Raiju",
+  BANSHEE = "Banshee",
+  JINN = "Jinn",
+  MARE = "Mare",
   REVENANT = "Revenant",
   SHADE = "Shade",
-  SPIRIT = "Spirit",
-  THE_MIMIC = "The Mimic",
-  THE_TWINS = "The Twins",
-  WRAITH = "Wraith",
+  DEMON = "Demon",
+  YUREI = "Yurei",
+  ONI = "Oni",
   YOKAI = "Yokai",
-  YUREI = "Yurei"
+  HANTU = "Hantu",
+  GORYO = "Goryo",
+  MYLING = "Myling",
+  ONRYO = "Onryo",
+  THE_TWINS = "The Twins",
+  RAIJU = "Raiju",
+  OBAKE = "Obake",
+  THE_MIMIC = "The Mimic"
 }
 
 export enum EvidenceEnum {
-  EEMF_LEVEL_5 = "EEMF Level 5",
+  EMF_LEVEL_5 = "EMF Level 5",
   DOTS_PROJECTOR = "D.O.T.S Projector",
   FINGERPRINTS = "Fingerprints",
   GHOST_ORB = "Ghost Orb",
@@ -61,7 +61,7 @@ export const ghostData = {
     weakness: "Tends to wander away less from its ghost room.",
     evidence: [
       EvidenceEnum.DOTS_PROJECTOR,
-      EvidenceEnum.EEMF_LEVEL_5,
+      EvidenceEnum.EMF_LEVEL_5,
       EvidenceEnum.FINGERPRINTS
     ]
   },
@@ -78,7 +78,7 @@ export const ghostData = {
     strength: "Travels at faster speeds if its victim is far away",
     weakness: "Cannot use its ability if the site's fuse box is off.",
     evidence: [
-      EvidenceEnum.EEMF_LEVEL_5,
+      EvidenceEnum.EMF_LEVEL_5,
       EvidenceEnum.FINGERPRINTS,
       EvidenceEnum.FREEZING_TEMPERATURES
     ]
@@ -97,7 +97,7 @@ export const ghostData = {
     weakness: "Produces paranormal sounds more frequently.",
     evidence: [
       EvidenceEnum.GHOST_WRITING,
-      EvidenceEnum.EEMF_LEVEL_5,
+      EvidenceEnum.EMF_LEVEL_5,
       EvidenceEnum.FINGERPRINTS
     ]
   },
@@ -105,7 +105,7 @@ export const ghostData = {
     strength: "May leave fingerprints that disappear quicker",
     weakness: "Has a small chance of leaving six-fingered handprints.",
     evidence: [
-      EvidenceEnum.EEMF_LEVEL_5,
+      EvidenceEnum.EMF_LEVEL_5,
       EvidenceEnum.GHOST_ORB,
       EvidenceEnum.FINGERPRINTS
     ]
@@ -115,7 +115,7 @@ export const ghostData = {
     weakness: "An Oni's increased activity makes them easier to find.",
     evidence: [
       EvidenceEnum.DOTS_PROJECTOR,
-      EvidenceEnum.EEMF_LEVEL_5,
+      EvidenceEnum.EMF_LEVEL_5,
       EvidenceEnum.FREEZING_TEMPERATURES
     ]
   },
@@ -151,7 +151,7 @@ export const ghostData = {
     weakness: "Disrupts electronic equipment from further away when it hunts.",
     evidence: [
       EvidenceEnum.DOTS_PROJECTOR,
-      EvidenceEnum.EEMF_LEVEL_5,
+      EvidenceEnum.EMF_LEVEL_5,
       EvidenceEnum.GHOST_ORB
     ]
   },
@@ -169,7 +169,7 @@ export const ghostData = {
     weakness: "Less likely to hunt if multiple people are nearby.",
     evidence: [
       EvidenceEnum.GHOST_WRITING,
-      EvidenceEnum.EEMF_LEVEL_5,
+      EvidenceEnum.EMF_LEVEL_5,
       EvidenceEnum.FREEZING_TEMPERATURES
     ]
   },
@@ -178,7 +178,7 @@ export const ghostData = {
     weakness: "Smudge sticks are more effective, preventing a hunt for longer.",
     evidence: [
       EvidenceEnum.GHOST_WRITING,
-      EvidenceEnum.EEMF_LEVEL_5,
+      EvidenceEnum.EMF_LEVEL_5,
       EvidenceEnum.SPIRIT_BOX
     ]
   },
@@ -195,7 +195,7 @@ export const ghostData = {
     strength: "Either Twin may start a hunt, though not at the same time",
     weakness: "Will often interact with the environment at the same time",
     evidence: [
-      EvidenceEnum.EEMF_LEVEL_5,
+      EvidenceEnum.EMF_LEVEL_5,
       EvidenceEnum.FREEZING_TEMPERATURES,
       EvidenceEnum.SPIRIT_BOX
     ]
@@ -205,7 +205,7 @@ export const ghostData = {
     weakness: "Will become more active if it steps in salt.",
     evidence: [
       EvidenceEnum.DOTS_PROJECTOR,
-      EvidenceEnum.EEMF_LEVEL_5,
+      EvidenceEnum.EMF_LEVEL_5,
       EvidenceEnum.SPIRIT_BOX
     ]
   },
