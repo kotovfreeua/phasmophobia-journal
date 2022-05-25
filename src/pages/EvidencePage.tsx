@@ -1,8 +1,9 @@
 import { useState } from "react";
-import Checkbox from "../components/Checkbox";
-import Hr from "../components/Hr";
 import classNames from "../utils/classNames";
 import { ghostData, evidences, ghosts, GhostEnum, EvidenceEnum } from "../data";
+import Page from "../components/Page";
+import Checkbox from "../components/Checkbox";
+import Hr from "../components/Hr";
 
 const EvidencePage: React.FC = () => {
   const [trueEvidences, setTrueEvidences] = useState<EvidenceEnum[]>([]);
@@ -47,7 +48,7 @@ const EvidencePage: React.FC = () => {
     !falseEvidences.some((evidence) => ghostData[ghostName].evidence.includes(evidence));
 
   return (
-    <div className='bg-[#fefcdb] text-stone-900 max-w-md sm:max-w-lg w-full px-4 md:px-10 py-12 rounded-[2px_3px]'>
+    <Page>
       <span className='text-4xl leading-9 font-medium tracking-wider'>Evidence</span>
 
       <Hr />
@@ -76,9 +77,9 @@ const EvidencePage: React.FC = () => {
           <button
             key={ghost}
             className={classNames(
-              "text-2xl leading-6 tracking-wider whitespace-nowrap border-[3px] border-transparent rounded-[50%] cursor-pointer select-none py-2",
-              selectedGhost === ghost && "!border-stone-900",
-              falseGhosts.includes(ghost) && "line-through",
+              "relative flex items-center justify-center text-2xl leading-6 tracking-wider whitespace-nowrap before:absolute before:w-full before:h-full before:border-[3px] before:border-transparent before:rounded-[50%] cursor-pointer select-none py-2 hover-marker z-10",
+              selectedGhost === ghost && "before:!border-stone-900",
+              falseGhosts.includes(ghost) && "crossed-out",
               !isPossibleGhost(ghost) && "opacity-20"
             )}
             onClick={handleGhostSelect(ghost)}
@@ -88,7 +89,7 @@ const EvidencePage: React.FC = () => {
           </button>
         ))}
       </div>
-    </div>
+    </Page>
   );
 };
 

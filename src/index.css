@@ -16,3 +16,42 @@
     @apply bg-black bg-gradient-to-t from-zinc-900/50 to-zinc-900;
   }
 }
+
+.page-bg {
+  background-image: url("./assets/svg/noise.svg");
+  box-shadow: inset 0 0px 100px -10px rgb(233 217 159);
+}
+
+.paper::before {
+  background-image: linear-gradient(rgb(113 113 122 / 0.1) 1px, transparent 1px),
+    linear-gradient(to right, rgb(113 113 122 / 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+
+  @apply absolute inset-0 blur-[1px];
+}
+
+.crossed-out {
+  @apply after:block;
+}
+
+.crossed-out::after {
+  @apply absolute w-[110%] h-1 top-1/2 -translate-y-1/2 rounded-[100%] bg-black;
+}
+
+.hover-marker {
+  @apply rounded-[38%_40%_30%_35%];
+}
+
+.hover-marker:hover {
+  background-image: radial-gradient(circle, #36a6e5 30%, transparent 90%);
+}
+
+.hover-marker1 {
+  @apply before:opacity-0 md:hover:before:opacity-100;
+}
+
+.hover-marker1::before {
+  background-image: radial-gradient(circle, #36a6e5 30%, transparent 90%);
+
+  @apply absolute w-full h-[90%] top-1/2 -translate-y-1/2 rounded-[38%_40%_30%_35%] -z-10 transition ease-in delay-300;
+}
