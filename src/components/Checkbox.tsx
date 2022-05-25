@@ -16,7 +16,7 @@ const Checkbox: React.FC<Props> = ({ label, checked, crossedOut, onChange }) => 
   >
     <input
       type='checkbox'
-      className='appearance-none w-4 h-4 sm:w-5 sm:h-5 border-2 sm:border-[2.5px] rounded-[2px] before:block before:-translate-x-1 before:text-[2.5rem] before:leading-5 checked:before:content-["X"] checked:bg-transparent border-stone-900 cursor-pointer'
+      className='appearance-none w-4 h-4 sm:w-5 sm:h-5 border-2 sm:border-[2.5px] rounded-[2px] before:block before:-translate-x-[0.1rem] md:before:-translate-x-1 before:text-[1.75rem] sm:before:text-[2.5rem] before:leading-5 checked:before:content-["X"] checked:bg-transparent border-stone-900 cursor-pointer'
       onChange={onChange}
       checked={checked}
     />
