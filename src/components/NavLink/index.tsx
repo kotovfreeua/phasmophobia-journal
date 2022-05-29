@@ -63,11 +63,11 @@ const BookmarkRightSVG: React.FC<{ className?: string }> = ({ className = "" }) 
 
 const Bookmark: React.FC<Props> = ({ className, children }) => (
   <div className={classNames("flex -ml-4 drop-shadow-2xl", className)}>
-    <BookmarkLeftSVG className='h-[30px] md:h-auto w-auto' />
-    <div className='flex justify-center items-center h-[30px] md:h-[36px] bg-gradient-to-b from-[#FBEBAF] to-[#EBD69A] px-4 sm:px-6 text-[1.35rem] -mx-[0.5px] rounded-[1px_0px_0px_1px] sm:text-2xl'>
+    <BookmarkLeftSVG className='h-[30px] sm:h-auto w-auto' />
+    <div className='flex justify-center items-center h-[30px] sm:h-[36px] bg-gradient-to-b from-[#FBEBAF] to-[#EBD69A] px-4 sm:px-6 text-[1.25rem] -mx-[0.5px] rounded-[1px_0px_0px_1px] sm:text-2xl'>
       {children}
     </div>
-    <BookmarkRightSVG className='h-[30px] md:h-auto w-auto' />
+    <BookmarkRightSVG className='h-[30px] sm:h-auto w-auto' />
   </div>
 );
 

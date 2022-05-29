@@ -29,7 +29,7 @@ root.render(
             }
           />
           <Route
-            path='about'
+            path='info'
             element={
               <BookWrapper>
                 <Page />

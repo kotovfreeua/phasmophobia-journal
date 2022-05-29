@@ -10,8 +10,8 @@ const BookWrapper: React.FC<Props> = ({ children }) => (
     <nav className='flex flex-row-reverse w-full mx-auto max-w-[28rem] sm:max-w-[32rem] lg:max-w-[64rem] pl-5 pr-1 pt-16'>
       <Bookmark className='!ml-auto'>EN</Bookmark>
 
-      <Link to='/about'>
-        <Bookmark>About</Bookmark>
+      <Link to='/info'>
+        <Bookmark>Info</Bookmark>
       </Link>
       <Link to='/ghosts'>
         <Bookmark className='lg:hidden'>Ghosts</Bookmark>
