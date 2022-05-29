@@ -1,3 +1,4 @@
-const classNames = (...args: (string | boolean)[]) => args.filter(Boolean).join(" ");
+const classNames = (...args: (string | boolean | undefined)[]) =>
+  args.filter(Boolean).join(" ");
 
 export default classNames;
