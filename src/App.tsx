@@ -1,10 +1,10 @@
-import EvidencePage from "./pages/EvidencePage";
+import { Outlet } from "react-router-dom";
 
 const App: React.FC = () => (
-  <main className='flex flex-wrap justify-center items-center min-h-screen'>
+  <main className='px-2 min-h-screen'>
     <h1 className='hidden'>Phasmophobia Journal</h1>
 
-    <EvidencePage />
+    <Outlet />
   </main>
 );
 
