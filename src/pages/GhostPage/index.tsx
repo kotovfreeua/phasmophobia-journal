@@ -47,7 +47,7 @@ const GhostPage: React.FC = () => {
 
       <div className='flex flex-col space-y-4 mb-4 mt-auto'>
         <span className='text-3xl sm:text-4xl leading-6 tracking-wider sm:leading-6'>
-          Evidences:
+          Evidences
         </span>
         {ghostData[ghostName].evidence.map((evidence) => (
           <span
