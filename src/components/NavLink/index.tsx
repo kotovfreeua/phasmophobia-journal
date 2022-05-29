@@ -7,7 +7,6 @@ interface Props {
 
 const BookmarkLeftSVG: React.FC<{ className?: string }> = ({ className = "" }) => (
   <svg
-    width='13.75'
     height='36'
     viewBox='0 0 32 84'
     fill='none'
@@ -15,7 +14,7 @@ const BookmarkLeftSVG: React.FC<{ className?: string }> = ({ className = "" }) =
     xmlns='http://www.w3.org/2000/svg'
   >
     <path
-      d='M0 67V84L32 84V0C27.1667 1 22 9 18.5 32C16 53 6.16667 65 0 67Z'
+      d='M0 67V84L32 84V0C28 1 22 9 19 32C16 53 6 65 0 67Z'
       fill='url(#paint0_linear_5_6)'
     />
     <defs>
@@ -36,14 +35,12 @@ const BookmarkLeftSVG: React.FC<{ className?: string }> = ({ className = "" }) =
 
 const BookmarkRightSVG: React.FC<{ className?: string }> = ({ className = "" }) => (
   <svg
-    width='14'
     height='36'
     viewBox='0 0 33 84'
     fill='none'
     className={className}
     xmlns='http://www.w3.org/2000/svg'
   >
-    <path d='M16 38C14 20 10 0 0 0V86L33 86V70C29 69 18 59 16 38Z' fill='black' />
     <path
       d='M16 38C14 20 10 0 0 0V86L33 86V70C29 69 18 59 16 38Z'
       fill='url(#paint0_linear_1_3)'
@@ -67,7 +64,7 @@ const BookmarkRightSVG: React.FC<{ className?: string }> = ({ className = "" }) 
 const Bookmark: React.FC<Props> = ({ className, children }) => (
   <div className={classNames("flex -ml-4 drop-shadow-2xl", className)}>
     <BookmarkLeftSVG className='h-[30px] md:h-auto w-auto' />
-    <div className='flex justify-center items-center h-[30px] md:h-[36px] bg-gradient-to-b from-[#FBEBAF] to-[#EBD69A] px-4 sm:px-6 tex-[1.35rem] sm:text-2xl'>
+    <div className='flex justify-center items-center h-[30px] md:h-[36px] bg-gradient-to-b from-[#FBEBAF] to-[#EBD69A] px-4 sm:px-6 text-[1.35rem] -mx-[0.5px] rounded-[1px_0px_0px_1px] sm:text-2xl'>
       {children}
     </div>
     <BookmarkRightSVG className='h-[30px] md:h-auto w-auto' />
