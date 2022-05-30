@@ -1,9 +1,9 @@
 import { useState } from "react";
-import classNames from "../../utils/classNames";
-import { ghostData, evidences, ghosts, GhostEnum, EvidenceEnum } from "../../data";
-import Page from "../../components/Page";
-import Checkbox from "../../components/Checkbox";
-import Hr from "../../components/Hr";
+import BookPage from "@/components/BookPage";
+import Checkbox from "@/components/Checkbox";
+import Hr from "@/components/Hr";
+import { data, evidences, ghosts, GhostEnum, EvidenceEnum } from "@/data/ghosts";
+import classNames from "@/utils/classNames";
 
 const EvidencePage: React.FC = () => {
   const [trueEvidences, setTrueEvidences] = useState<EvidenceEnum[]>([]);
@@ -44,11 +44,11 @@ const EvidencePage: React.FC = () => {
   };
 
   const isPossibleGhost = (ghostName: GhostEnum) =>
-    trueEvidences.every((evidence) => ghostData[ghostName].evidence.includes(evidence)) &&
-    !falseEvidences.some((evidence) => ghostData[ghostName].evidence.includes(evidence));
+    trueEvidences.every((evidence) => data[ghostName].evidence.includes(evidence)) &&
+    !falseEvidences.some((evidence) => data[ghostName].evidence.includes(evidence));
 
   return (
-    <Page className='page-pattern'>
+    <BookPage className='page-pattern'>
       <span className='text-5xl leading-9 font-medium tracking-wider'>Evidence</span>
 
       <Hr />
@@ -89,7 +89,7 @@ const EvidencePage: React.FC = () => {
           </button>
         ))}
       </div>
-    </Page>
+    </BookPage>
   );
 };
 

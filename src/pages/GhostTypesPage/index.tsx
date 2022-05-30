@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import Hr from "../../components/Hr";
-import Page from "../../components/Page";
-import { ghosts } from "../../data";
-import { toKebabCase } from "../../utils/toKebabCase";
+import Hr from "@/components/Hr";
+import BookPage from "@/components/BookPage";
+import { ghosts } from "@/data/ghosts";
+import toKebabCase from "@/utils/toKebabCase";
 
 const GhostTypesPage: React.FC = () => (
-  <Page>
+  <BookPage>
     <span className='text-5xl leading-9 font-medium tracking-wider'>Ghost Types</span>
 
     <Hr />
@@ -26,7 +26,7 @@ const GhostTypesPage: React.FC = () => (
         </li>
       ))}
     </ul>
-  </Page>
+  </BookPage>
 );
 
 export default GhostTypesPage;

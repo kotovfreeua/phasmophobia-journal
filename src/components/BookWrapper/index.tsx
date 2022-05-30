@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Bookmark from "../NavLink";
+import Bookmark from "@/components/Bookmark";
 
 interface Props {
   children: React.ReactNode;
@@ -13,8 +13,8 @@ const BookWrapper: React.FC<Props> = ({ children }) => (
       <Link to='/info'>
         <Bookmark>Info</Bookmark>
       </Link>
-      <Link to='/ghosts'>
-        <Bookmark className='lg:hidden'>Ghosts</Bookmark>
+      <Link to='/ghosts' className='lg:hidden'>
+        <Bookmark>Ghosts</Bookmark>
       </Link>
       <Link to='/'>
         <Bookmark>Evidence</Bookmark>
