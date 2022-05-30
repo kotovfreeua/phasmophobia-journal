@@ -1,1 +1,3 @@
-export const toKebabCase = (str: string) => str.split(" ").join("-").toLowerCase();
+export default function toKebabCase(str: string) {
+  return str.split(" ").join("-").toLowerCase();
+}
