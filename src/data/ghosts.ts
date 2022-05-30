@@ -36,14 +36,14 @@ export const evidences = Object.values(EvidenceEnum);
 
 export const ghosts = Object.values(GhostEnum);
 
-interface GhostData {
-  description: string;
-  strength?: string;
-  weakness: string;
-  evidence: EvidenceEnum[];
-}
-
-export const ghostData: { [ghostType in GhostEnum]: GhostData } = {
+export const data: {
+  [ghostType in GhostEnum]: {
+    description: string;
+    strength?: string;
+    weakness: string;
+    evidence: EvidenceEnum[];
+  };
+} = {
   [GhostEnum.SPIRIT]: {
     description:
       "Spirits are very common ghosts. They are very powerful, but passive, only attacking when they need to. They defend their place of death to the utmost degree killing anyone that is caught overstaying their welcome.",
