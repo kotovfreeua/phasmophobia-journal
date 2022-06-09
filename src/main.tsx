@@ -6,6 +6,8 @@ import App from "./App";
 
 import BookWrapper from "@/components/BookWrapper";
 import BookPage from "@/components/BookPage";
+import TitlePage from "@/pages/TitlePage";
+import AuthorPage from "@/pages/AuthorPage";
 import EvidencePage from "@/pages/EvidencePage";
 import GhostPage from "@/pages/GhostPage";
 import GhostTypesPage from "@/pages/GhostTypesPage";
@@ -33,8 +35,8 @@ root.render(
             path='info'
             element={
               <BookWrapper>
-                <BookPage />
-                <BookPage />
+                <TitlePage />
+                <AuthorPage />
               </BookWrapper>
             }
           />
