@@ -19,7 +19,10 @@ export enum GhostEnum {
   THE_TWINS = "The Twins",
   RAIJU = "Raiju",
   OBAKE = "Obake",
-  THE_MIMIC = "The Mimic"
+  THE_MIMIC = "The Mimic",
+  MOROI = "Moroi",
+  DEOGEN = "Deogen",
+  THAYE = "Thaye"
 }
 
 export enum EvidenceEnum {
@@ -273,6 +276,40 @@ export const data: {
       EvidenceEnum.FINGERPRINTS,
       EvidenceEnum.FREEZING_TEMPERATURES,
       EvidenceEnum.SPIRIT_BOX
+    ]
+  },
+  [GhostEnum.MOROI]: {
+    description:
+      "Moroi have risen from the grave to drain energy from the living. They have been known to place curses on their victims, curable only by antidotes or moving very far away.",
+    strength: "The weaker their victims, the stranger the Moroi becomes",
+    weakness: "Moroi suffer from hyperosmia, weakening them for longer periods",
+    evidence: [
+      EvidenceEnum.SPIRIT_BOX,
+      EvidenceEnum.GHOST_WRITING,
+      EvidenceEnum.FREEZING_TEMPERATURES
+    ]
+  },
+  [GhostEnum.DEOGEN]: {
+    description:
+      "Sometimes surrounded by an endless fog, Deogen have been eluding ghost hunters for years. These ghosts have been reported to find even the most hidden prey before stalking them into exhaustion.",
+    strength: "Deogen constantly sense the living. You can run but you can't hide.",
+    weakness: "Deogen require a lot of energy to form and will move very slowly.",
+    evidence: [
+      EvidenceEnum.SPIRIT_BOX,
+      EvidenceEnum.GHOST_WRITING,
+      EvidenceEnum.DOTS_PROJECTOR
+    ]
+  },
+  [GhostEnum.THAYE]: {
+    description:
+      "Thaye have been known to rapidly age over time, even in the afterlife. From what we're learned, they seem to deteriorate faster while within the presence of the living.",
+    strength: "Upon entering the location, Thaye will become active, defensive and agile",
+    weakness:
+      "Thaye will weaken over time, making them weaker, slower and less aggressive",
+    evidence: [
+      EvidenceEnum.GHOST_ORB,
+      EvidenceEnum.GHOST_WRITING,
+      EvidenceEnum.DOTS_PROJECTOR
     ]
   }
 };
