@@ -53,7 +53,7 @@ const EvidencePage: React.FC = () => {
 
       <Hr />
 
-      <div className='flex flex-wrap gap-y-4 py-2 sm:py-4 sm:gap-5'>
+      <div className='flex flex-wrap gap-y-4 py-2 sm:py-3 sm:gap-5'>
         {evidences.map((evidence) => (
           <div key={evidence} className='flex w-36 sm:w-40 grow'>
             <Checkbox
@@ -68,7 +68,7 @@ const EvidencePage: React.FC = () => {
 
       <Hr />
 
-      <p className='text-xl sm:text-2xl leading-6 sm:leading-6 tracking-wider text-center my-2 sm:my-4 max-w-xs sm:max-w-sm mx-auto'>
+      <p className='text-xl sm:text-2xl leading-5 sm:leading-5 tracking-wider text-center my-2 sm:mt-2 mb-4 max-w-xs sm:max-w-sm mx-auto'>
         Using the evidence were found, we believe the ghost is a
       </p>
 
@@ -77,7 +77,7 @@ const EvidencePage: React.FC = () => {
           <button
             key={ghost}
             className={classNames(
-              "relative flex items-center justify-center text-[1.35rem] sm:text-2xl leading-6 tracking-wider whitespace-nowrap before:absolute before:w-full before:h-full before:border-[3px] before:border-transparent before:rounded-[50%] cursor-pointer select-none py-2 disabled:cursor-auto z-10",
+              "relative flex items-center justify-center text-[1.35rem] sm:text-2xl leading-6 tracking-wider whitespace-nowrap before:absolute before:w-full before:h-full before:border-[3px] before:border-transparent before:rounded-[50%] cursor-pointer select-none py-1 disabled:cursor-auto z-10",
               selectedGhost === ghost && "before:!border-stone-900",
               falseGhosts.includes(ghost) && "crossed-out",
               !isPossibleGhost(ghost) && "opacity-20"
