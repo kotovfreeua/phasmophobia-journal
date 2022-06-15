@@ -16,11 +16,11 @@ const Checkbox: React.FC<Props> = ({ label, checked, crossedOut, onChange }) => 
   >
     <input
       type='checkbox'
-      className='appearance-none w-4 h-4 sm:w-5 sm:h-5 border-2 sm:border-[2.5px] rounded-[2px] before:block before:-translate-x-[0.1rem] md:before:-translate-x-1 before:text-[1.75rem] sm:before:text-[2.5rem] before:leading-5 before:content-["X"] before:opacity-0 checked:before:opacity-100 checked:bg-transparent border-stone-900 cursor-pointer'
+      className='appearance-none w-4 h-4 sm:w-5 sm:h-5 border-2 sm:border-[2.5px] rounded-[2px] before:block before:-translate-x-[0.1rem] md:before:-translate-x-1 before:text-[1.75rem] sm:before:text-4xl sm:text-[2.5rem] before:leading-5 sm:before:leading-5 before:content-["X"] before:opacity-0 checked:before:opacity-100 checked:bg-transparent border-stone-900 cursor-pointer'
       onChange={onChange}
       checked={checked}
     />
-    <span className='text-lg sm:text-2xl leading-5 sm:leading-6 tracking-wider font-medium whitespace-nowrap select-none'>
+    <span className='text-lg sm:text-2xl leading-5 sm:leading-6 font-medium whitespace-nowrap select-none'>
       {label}
     </span>
   </label>
