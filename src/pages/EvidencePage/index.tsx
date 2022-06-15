@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import BookPage from "@/components/BookPage";
 import Checkbox from "@/components/Checkbox";
 import Hr from "@/components/Hr";
@@ -10,6 +11,8 @@ const EvidencePage: React.FC = () => {
   const [falseEvidences, setFalseEvidences] = useState<EvidenceEnum[]>([]);
   const [selectedGhost, setSelectedGhost] = useState<GhostEnum | null>(null);
   const [falseGhosts, setFalseGhosts] = useState<GhostEnum[]>([]);
+
+  const [t] = useTranslation();
 
   const handleEvidencesChange = (currentEvidence: EvidenceEnum) => () => {
     if (trueEvidences.includes(currentEvidence)) {
@@ -49,7 +52,9 @@ const EvidencePage: React.FC = () => {
 
   return (
     <BookPage className='page-pattern'>
-      <span className='text-5xl leading-9 font-medium tracking-wider'>Evidence</span>
+      <span className='text-4xl sm:text-[2.5rem] leading-9 font-medium tracking-wider'>
+        {t("Evidence.heading")}
+      </span>
 
       <Hr />
 
@@ -57,7 +62,7 @@ const EvidencePage: React.FC = () => {
         {evidences.map((evidence) => (
           <div key={evidence} className='flex w-36 sm:w-40 grow'>
             <Checkbox
-              label={evidence}
+              label={t(`evidences.${evidence}`)}
               checked={trueEvidences.includes(evidence)}
               crossedOut={falseEvidences.includes(evidence)}
               onChange={handleEvidencesChange(evidence)}
@@ -68,8 +73,8 @@ const EvidencePage: React.FC = () => {
 
       <Hr />
 
-      <p className='text-xl sm:text-2xl leading-5 sm:leading-5 tracking-wider text-center my-2 sm:mt-2 mb-4 max-w-xs sm:max-w-sm mx-auto'>
-        Using the evidence were found, we believe the ghost is a
+      <p className='text-xl sm:text-2xl leading-6 sm:leading-6 text-center my-2 sm:mt-2 mb-4 max-w-xs sm:max-w-sm mx-auto'>
+        {t("Using the evidence were found, we believe the ghost is a")}
       </p>
 
       <div className='grid grid-cols-3 gap-x-3 text-center'>
@@ -77,7 +82,7 @@ const EvidencePage: React.FC = () => {
           <button
             key={ghost}
             className={classNames(
-              "relative flex items-center justify-center text-[1.35rem] sm:text-2xl leading-6 tracking-wider whitespace-nowrap before:absolute before:w-full before:h-full before:border-[3px] before:border-transparent before:rounded-[50%] cursor-pointer select-none py-1 disabled:cursor-auto z-10",
+              "relative flex items-center justify-center text-[1.35rem] sm:text-2xl leading-6 whitespace-nowrap before:absolute before:w-full before:h-full before:border-[3px] before:border-transparent before:rounded-[50%] cursor-pointer select-none py-1 disabled:cursor-auto z-10",
               selectedGhost === ghost && "before:!border-stone-900",
               falseGhosts.includes(ghost) && "crossed-out",
               !isPossibleGhost(ghost) && "opacity-20"
@@ -85,7 +90,7 @@ const EvidencePage: React.FC = () => {
             onClick={handleGhostSelect(ghost)}
             disabled={!isPossibleGhost(ghost)}
           >
-            {ghost}
+            {t(`ghosts.${ghost}`)}
           </button>
         ))}
       </div>

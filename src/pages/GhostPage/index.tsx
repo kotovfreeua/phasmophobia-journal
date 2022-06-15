@@ -1,4 +1,6 @@
 import { Link, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { langLabels } from "@/locales";
 import Hr from "@/components/Hr";
 import BookPage from "@/components/BookPage";
 import { ghosts, data, GhostEnum } from "@/data/ghosts";
@@ -8,11 +10,16 @@ import toTitleCase from "@/utils/toTitleCase";
 const GhostPage: React.FC = () => {
   const { ghostType } = useParams();
 
+  const [t, i18n] = useTranslation();
+
+  const currentlang =
+    langLabels.find((lang) => lang.includes(i18n.language.split("-")[0])) || "en";
+
   if (!ghostType || !Object.values(GhostEnum).includes(toTitleCase(ghostType) as any))
     return (
       <BookPage className='page-pattern'>
-        <span className='text-4xl sm:text-5xl leading-9 font-medium tracking-wider'>
-          Undiscovered ghost
+        <span className='text-4xl sm:text-4xl sm:text-[2.5rem] leading-9 font-medium tracking-wider'>
+          {t("Undiscovered ghost")}
         </span>
 
         <Hr />
@@ -27,34 +34,36 @@ const GhostPage: React.FC = () => {
 
   return (
     <BookPage className='page-pattern'>
-      <span className='text-5xl leading-9 font-medium tracking-wider'>{ghostName}</span>
+      <span className='text-4xl sm:text-[2.5rem] leading-9 font-medium tracking-wider'>
+        {t(`ghosts.${ghostName}`)}
+      </span>
 
       <Hr />
 
       <p className='text-xl sm:text-2xl leading-6 sm:leading-7 tracking-wider max-w-sm sm:max-w-[26rem] my-4'>
-        {data[ghostName].description}
+        {data[ghostName].description[currentlang]}
       </p>
 
       {data[ghostName].strength && (
         <p className='text-xl sm:text-2xl leading-6 sm:leading-7 tracking-wider max-w-sm sm:max-w-[26rem] my-4'>
-          Strength: {data[ghostName].strength}
+          {t("Strength")}: {data[ghostName].strength![currentlang]}
         </p>
       )}
 
       <p className='text-xl sm:text-2xl leading-6 sm:leading-7 tracking-wider max-w-sm sm:max-w-[26rem] my-4'>
-        Weakness: {data[ghostName].weakness}
+        {t("Weakness")}: {data[ghostName].weakness[currentlang]}
       </p>
 
-      <div className='flex flex-col space-y-4 mb-4 mt-auto'>
-        <span className='text-3xl sm:text-4xl leading-6 tracking-wider sm:leading-6'>
-          Evidences
+      <div className='flex flex-col space-y-2 sm:space-y-3 mt-auto'>
+        <span className='text-2xl sm:text-3xl leading-6 tracking-wider sm:leading-6'>
+          {t(`Evidence.heading`)}
         </span>
         {data[ghostName].evidence.map((evidence) => (
           <span
             key={evidence}
-            className='text-2xl sm:text-3xl leading-6 tracking-wider sm:leading-6'
+            className='text-xl sm:text-2xl leading-6 tracking-wider sm:leading-6'
           >
-            {evidence}
+            {t(`evidences.${evidence}`)}
           </span>
         ))}
       </div>

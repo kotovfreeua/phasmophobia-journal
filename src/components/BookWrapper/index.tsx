@@ -1,27 +1,33 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Bookmark from "@/components/Bookmark";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 interface Props {
   children: React.ReactNode;
 }
 
-const BookWrapper: React.FC<Props> = ({ children }) => (
-  <div className='h-full mb-20'>
-    <nav className='flex flex-row-reverse w-full mx-auto max-w-[28rem] sm:max-w-[32rem] lg:max-w-[64rem] pl-5 pr-1 pt-16'>
-      <Bookmark className='!ml-auto'>EN</Bookmark>
+const BookWrapper: React.FC<Props> = ({ children }) => {
+  const [t] = useTranslation();
 
-      <Link to='/info'>
-        <Bookmark>Info</Bookmark>
-      </Link>
-      <Link to='/ghosts' className='lg:hidden'>
-        <Bookmark>Ghosts</Bookmark>
-      </Link>
-      <Link to='/'>
-        <Bookmark>Evidence</Bookmark>
-      </Link>
-    </nav>
-    <div className='flex justify-center items-center'>{children}</div>
-  </div>
-);
+  return (
+    <div className='h-full mb-20'>
+      <nav className='flex flex-row-reverse w-full mx-auto max-w-[28rem] sm:max-w-[32rem] lg:max-w-[64rem] pl-5 pr-1 pt-16'>
+        <LanguageSwitcher />
+
+        <Link to='/info'>
+          <Bookmark>{t("Info")}</Bookmark>
+        </Link>
+        <Link to='/ghosts' className='lg:hidden'>
+          <Bookmark>{t("Ghost Types.nav")}</Bookmark>
+        </Link>
+        <Link to='/'>
+          <Bookmark>{t("Evidence.nav")}</Bookmark>
+        </Link>
+      </nav>
+      <div className='flex justify-center items-center'>{children}</div>
+    </div>
+  );
+};
 
 export default BookWrapper;
