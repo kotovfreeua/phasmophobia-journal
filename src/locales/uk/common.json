@@ -1,0 +1,57 @@
+{
+  "translation": {
+    "Phasmophobia Journal": "Журнал Фазмофобії",
+    "Info": "Інфо",
+    "Ghost Types": {
+      "nav": "Привиди",
+      "heading": "Види Привидів"
+    },
+    "Select a ghost type below to view more information:": "Виберіть тип привида нижче, щоб переглянути додаткову інформацію:",
+    "ghosts": {
+      "Spirit": "Дух",
+      "Wraith": "Спектр",
+      "Phantom": "Фантом",
+      "Poltergeist": "Полтергейст",
+      "Banshee": "Банші",
+      "Jinn": "Джин",
+      "Mare": "Мара",
+      "Revenant": "Ревенант",
+      "Shade": "Тінь",
+      "Demon": "Демон",
+      "Yurei": "Юрей",
+      "Oni": "Оні",
+      "Yokai": "Йокай",
+      "Hantu": "Ханту",
+      "Goryo": "Горьо",
+      "Myling": "Майлінг",
+      "Onryo": "Онрйо",
+      "The Twins": "Близнюки",
+      "Raiju": "Райдзю",
+      "Obake": "Обаке",
+      "The Mimic": "Мімік",
+      "Moroi": "Морой",
+      "Deogen": "Деоген",
+      "Thaye": "Тхає"
+    },
+    "Undiscovered ghost": "Невідома примара",
+    "Strength": "Особливість",
+    "Weakness": "Слабкість",
+    "Using the evidence were found, we believe the ghost is a": "Використовуючи знайдені нами докази, ми вважаємо, що привид виду",
+    "Evidence": {
+      "nav": "Докази",
+      "heading": "Докази"
+    },
+    "evidences": {
+      "EMF Level 5": "ЕМП (рівень 5)",
+      "D.O.T.S Projector": "Проєктор D.O.T.S",
+      "Fingerprints": "Відбитки пальців",
+      "Ghost Orb": "Примарний вогник",
+      "Ghost Writing": "Записи в блакноті",
+      "Spirit Box": "Радіоприймач",
+      "Freezing Temperatures": "Мінусова температура"
+    },
+    "Author": "Автор",
+    "Paul Kotov": "Павло Котов",
+    "No ghosts here": "Тут немає привидів"
+  }
+}

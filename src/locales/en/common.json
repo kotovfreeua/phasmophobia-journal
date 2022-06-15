@@ -1,0 +1,57 @@
+{
+  "translation": {
+    "Phasmophobia Journal": "Phasmophobia Journal",
+    "Info": "Info",
+    "Ghost Types": {
+      "nav": "Ghosts",
+      "heading": "Ghost Types"
+    },
+    "Select a ghost type below to view more information:": "Select a ghost type below to view more information:",
+    "ghosts": {
+      "Spirit": "Spirit",
+      "Wraith": "Wraith",
+      "Phantom": "Phantom",
+      "Poltergeist": "Poltergeist",
+      "Banshee": "Banshee",
+      "Jinn": "Jinn",
+      "Mare": "Mare",
+      "Revenant": "Revenant",
+      "Shade": "Shade",
+      "Demon": "Demon",
+      "Yurei": "Yurei",
+      "Oni": "Oni",
+      "Yokai": "Yokai",
+      "Hantu": "Hantu",
+      "Goryo": "Goryo",
+      "Myling": "Myling",
+      "Onryo": "Onryo",
+      "The Twins": "The Twins",
+      "Raiju": "Raiju",
+      "Obake": "Obake",
+      "The Mimic": "The Mimic",
+      "Moroi": "Moroi",
+      "Deogen": "Deogen",
+      "Thaye": "Thaye"
+    },
+    "Undiscovered ghost": "Undiscovered ghost",
+    "Strength": "Strength",
+    "Weakness": "Weakness",
+    "Evidence": {
+      "nav": "Evidence",
+      "heading": "Evidence"
+    },
+    "Using the evidence were found, we believe the ghost is a": "Using the evidence were found, we believe the ghost is a",
+    "evidences": {
+      "EMF Level 5": "EMF Level 5",
+      "D.O.T.S Projector": "D.O.T.S Projector",
+      "Fingerprints": "Fingerprints",
+      "Ghost Orb": "Ghost Orb",
+      "Ghost Writing": "Ghost Writing",
+      "Spirit Box": "Spirit Box",
+      "Freezing Temperatures": "Freezing Temperatures"
+    },
+    "Author": "Author",
+    "Paul Kotov": "Paul Kotov",
+    "No ghosts here": "No ghosts here"
+  }
+}

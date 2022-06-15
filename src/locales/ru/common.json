@@ -1,0 +1,57 @@
+{
+  "translation": {
+    "Phasmophobia Journal": "Журнал Фазмофобии",
+    "Info": "Инфо",
+    "Ghost Types": {
+      "nav": "Призраки",
+      "heading": "Классификация призраков"
+    },
+    "Select a ghost type below to view more information:": "Выберите тип призрака:",
+    "ghosts": {
+      "Spirit": "Дух",
+      "Wraith": "Мираж",
+      "Phantom": "Фантом",
+      "Poltergeist": "Полтергейст",
+      "Banshee": "Банши",
+      "Jinn": "Джинн",
+      "Mare": "Мара",
+      "Revenant": "Ревенант",
+      "Shade": "Тень",
+      "Demon": "Демон",
+      "Yurei": "Юрэй",
+      "Oni": "Они",
+      "Yokai": "Ёкай",
+      "Hantu": "Ханту",
+      "Goryo": "Горё",
+      "Myling": "Мюлинг",
+      "Onryo": "Онрё",
+      "The Twins": "Близнецы",
+      "Raiju": "Райдзю",
+      "Obake": "Обакэ",
+      "The Mimic": "Мимик",
+      "Moroi": "Морой",
+      "Deogen": "Деоген",
+      "Thaye": "Тайэ"
+    },
+    "Undiscovered ghost": "Неизвестный призрак",
+    "Strength": "Особенность",
+    "Weakness": "Слабость",
+    "Evidence": {
+      "nav": "Улики",
+      "heading": "Доказательства"
+    },
+    "Using the evidence were found, we believe the ghost is a": "На основе приведённых доказательств, мы заключаем, что этот призрак вида",
+    "evidences": {
+      "EMF Level 5": "ЭМП (ур5)",
+      "D.O.T.S Projector": "Лазерный проектор",
+      "Fingerprints": "Отпечатки рук",
+      "Ghost Orb": "Призрачный огонёк",
+      "Ghost Writing": "Записи в блокноте",
+      "Spirit Box": "Радиоприёмник",
+      "Freezing Temperatures": "Минусовая температура"
+    },
+    "Author": "Автор",
+    "Paul Kotov": "Павел Котов",
+    "No ghosts here": "Здесь нет призраков"
+  }
+}
