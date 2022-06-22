@@ -356,7 +356,7 @@ export const data: {
   },
   [GhostEnum.GORYO]: {
     description: {
-      en: "When a Goryo passes through a DOTS projector, using a video camera is the only way to see it.",
+      en: "When a Goryo passes through a D.O.T.S projector, using a video camera is the only way to see it.",
       ru: "Когда Горё проходит вблизи лазерного проектора, его присутствие можно заметить только при наблюдении через видеокамеру.",
       uk: "Горьо (Goryo) — таємничий привид, якого можна виявити завдяки лазерної астки проєктора D.O.T.S при перегляді через відеокамеру."
     },
@@ -444,7 +444,7 @@ export const data: {
   },
   [GhostEnum.RAIJU]: {
     description: {
-      en: "A Raiju is a demon that thrives on electrical current. While generally calm, they can become agitated when overwhelmed} with power.",
+      en: "A Raiju is a demon that thrives on electrical current. While generally calm, they can become agitated when overwhelmed with power.",
       ru: "Райдзю — демон, который питается электрическим током. Хотя в целом Райдзю спокойны, они могут приходить в волнение, когда переполнены силой.",
       uk: "Райдзю (Raiju) — демон, який процвітає під дією електричного струму. Хоч вони в цілому спокійні, але вони можуть розсердитися, коли перевантажені силою."
     },
@@ -466,7 +466,7 @@ export const data: {
   },
   [GhostEnum.OBAKE]: {
     description: {
-      en: "Obake are terrifying shape-shifters, capable of taking an many forms. They have been seen taking on humanoid shapes to} attract their prey.",
+      en: "Obake are terrifying shape-shifters, capable of taking an many forms. They have been seen taking on humanoid shapes to attract their prey.",
       ru: "Обакэ — жуткие оборотни, способные принимать самые различные формы. Они иногда принимают человекоподобное обличие, чтобы привлечь свою добычу.",
       uk: "Обаке (Obake) — це жахливі перевертні, які здатні приймати різні форми. Помічали, що вони набували гуманоїдних форм, щоб заманити свою здобич."
     },
@@ -532,7 +532,7 @@ export const data: {
   },
   [GhostEnum.DEOGEN]: {
     description: {
-      en: "Sometimes surrounded by an endless fog, Deogen have been eluding ghost hunters for years. These ghosts have been reported} to find even the most hidden prey before stalking them into exhaustion.",
+      en: "Sometimes surrounded by an endless fog, Deogen have been eluding ghost hunters for years. These ghosts have been reported to find even the most hidden prey before stalking them into exhaustion.",
       ru: "Порой окутанный бесконечным туманом, Деоген много лет является загадкой для охотников за привидениями.",
       uk: "Ховаючись під покровом нескінченного туману, Деоген впродовж багатьох років залишається загадкою для мисливців за привидами."
     },
