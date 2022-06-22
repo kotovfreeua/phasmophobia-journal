@@ -23,11 +23,11 @@
 }
 
 .page {
-  @apply hidden relative bg-[#fefcdb] text-stone-900 max-w-md sm:max-w-lg w-full h-[41rem] sm:h-[47rem] px-4 sm:px-10 py-12 rounded-[2px_0px_0px_3px] page-noise page-shadow lg:flex flex-col;
+  @apply hidden relative bg-[#fefcdb] text-stone-900 max-w-md sm:max-w-lg w-full h-[41rem] sm:h-[47rem] px-4 sm:px-10 py-12 rounded-[4px_0px_0px_6px] page-noise page-shadow lg:flex flex-col;
 }
 
 .page + .page {
-  @apply flex rounded-[2px_3px] lg:rounded-[0px_2px_3px_0px];
+  @apply flex rounded-[6px_4px] lg:rounded-[0px_6px_4px_0px];
 }
 
 .page-shadow {
