@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { registerSW } from "virtual:pwa-register";
 
 import App from "./App";
 
@@ -14,6 +15,8 @@ import GhostTypesPage from "@/pages/GhostTypesPage";
 import NotFoundPage from "@/pages/NotFoundPage";
 
 import "@/styles/index.css";
+
+registerSW();
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
