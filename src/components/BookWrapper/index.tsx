@@ -12,7 +12,7 @@ const BookWrapper: React.FC<Props> = ({ children }) => {
 
   return (
     <div className='h-full mb-4 sm:mb-0'>
-      <nav className='flex flex-row-reverse w-full mx-auto max-w-[28rem] sm:max-w-[32rem] lg:max-w-[64rem] pl-5 pr-1 pt-8 sm:pt-16'>
+      <nav className='flex flex-row-reverse w-full mx-auto max-w-[28rem] sm:max-w-[32rem] lg:max-w-[64rem] pl-5 pr-1 pt-4 sm:pt-16'>
         <LanguageSwitcher />
 
         <Link to='/info'>
