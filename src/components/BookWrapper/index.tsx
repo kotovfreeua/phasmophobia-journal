@@ -11,7 +11,7 @@ const BookWrapper: React.FC<Props> = ({ children }) => {
   const [t] = useTranslation();
 
   return (
-    <div className='h-full mb-20'>
+    <div className='h-full'>
       <nav className='flex flex-row-reverse w-full mx-auto max-w-[28rem] sm:max-w-[32rem] lg:max-w-[64rem] pl-5 pr-1 pt-16'>
         <LanguageSwitcher />
 
