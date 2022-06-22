@@ -18,7 +18,7 @@
   }
 
   body {
-    @apply bg-black bg-gradient-to-t from-zinc-900/50 to-zinc-900;
+    @apply bg-black bg-gradient-to-t from-zinc-900/50 to-zinc-900 antialiased;
   }
 }
 
