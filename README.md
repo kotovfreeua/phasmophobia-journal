@@ -9,16 +9,6 @@
 Web App to accompany the game Phasmophobia.
 Progressive Web Application created with Vite.js with 18n + Tailwind CSS and powered with Typescript.
 
-### Getting Started
-
-Install dependencies and run the app:
-
-```bash
-yarn && yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
 ## Run localy
 
 Install dependencies and run the app:
