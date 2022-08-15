@@ -1,11 +1,13 @@
 # Phasmophobia Journal Clone
 
-> Web App to accompany the game Phasmophobia
+> [🔗 phasmophobia.vercel.app](https://phasmophobia.vercel.app/)
+
+![screenshot](/assets/screenshot.png)
 
 ## Description
 
-Web app created with Create React App + Tailwind CSS and powered with Typescript  
-_PWA support in progress_
+Web App to accompany the game Phasmophobia.
+Progressive Web Application created with Vite.js with 18n + Tailwind CSS and powered with Typescript.
 
 ### Getting Started
 
@@ -17,8 +19,22 @@ yarn && yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-#### Author
+## Run localy
 
-**Paul Kotov** (paul@kotov.com.ua)
+Install dependencies and run the app:
+
+```bash
+npm install && npm run dev
+```
+
+or
+
+```bash
+yarn && yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+---
 
 Made with love ❤️
