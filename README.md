@@ -7,7 +7,7 @@
 ## Description
 
 Web App to accompany the game Phasmophobia.
-Progressive Web Application created with Vite.js with 18n + Tailwind CSS and powered with Typescript.
+Progressive Web Application created with Vite.js with i18n + Tailwind CSS and powered with Typescript.
 
 ## Run localy
 
